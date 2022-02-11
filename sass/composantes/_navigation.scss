@@ -1,0 +1,44 @@
+#chk-burger:checked ~ #burger{
+    transform: rotate(90deg);
+
+}
+#chk-burger{
+    display: none;
+}
+#burger{
+    position: absolute;
+    transition: transform 1s;
+    transform: rotate(0deg);
+}
+
+#chk-burger:checked ~ .menu-principale-container{
+    display: block;
+}
+.menu-principale-container {
+    display: none;
+}
+.menu{
+    list-style-type: none;
+}
+.menu-item{
+    margin: 0;
+    padding: 0;
+    a{
+        display: block;
+        padding: 4px;
+        text-decoration: none;
+        background-color: $color__background-link;
+        &:hover{
+            background-color: $color__background-link-hover;
+        }
+    }
+
+}
+@media screen and (min-width : $largeur__media--desktop){
+    #burger{
+        display: none;
+    }
+    .menu-principale-container{
+        display: none;
+    }
+}
