@@ -8,6 +8,36 @@ License: GNU General Public License v2 or later
 Text Domain: cidw-4w4
 */
 /* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+.animation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.animation__bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: aqua;
+  color: azure;
+  font-size: 3rem;
+  animation: anim-entete 1s forwards;
+}
+
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh) translateX(-100vh);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+/* ---------------------------------------------------------
 VARIABLES
 --------------------------------------------------------- */
 /* ---------------------------------------------------------
@@ -339,7 +369,7 @@ ELEMENTS
 --------------------------------------------------------- */
 a {
   font-size: clamp(0.5rem, 2vw, 1.2rem);
-  color: #00f;
+  color: #818181;
 }
 
 a:visited {
@@ -347,7 +377,7 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-  color: #00a;
+  color: black;
 }
 
 a:focus {
@@ -360,15 +390,15 @@ a:hover, a:active {
 
 .site__footer a {
   font-size: clamp(0.5rem, 2vw, 1.2rem);
-  color: #d8db25;
+  color: #818181;
 }
 
 .site__footer a:visited {
-  color: #df3a08;
+  color: #5b5bb9;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #14aa00;
+  color: black;
 }
 
 .site__footer a:focus {
@@ -411,12 +441,12 @@ COMPOSANTS
   transition: 0.5s;
   max-width: 45%;
   margin: 6px 3px;
-  border: 2px solid #f4f4ff;
-  background-color: #b7b6af;
+  border: 2px solid white;
+  background-color: #001e38;
 }
 
 .cours__carte h2 {
-  color: #f7f7f7;
+  color: #838383;
   text-align: left;
   font-size: clamp(0.5rem, 3vw, 1.4rem);
 }
@@ -445,7 +475,7 @@ COMPOSANTS
 }
 
 .cours__carte:nth-of-type(even) {
-  background-color: #cecdc5;
+  background-color: #636363;
 }
 
 .cours__carte:hover {
@@ -491,6 +521,10 @@ COMPOSANTS
   padding-right: 10px;
 }
 
+.footer__menu .menu-item a:hover svg {
+  color: black;
+}
+
 .site__header {
   display: flex;
   flex-direction: column;
@@ -505,7 +539,7 @@ COMPOSANTS
 }
 
 .site__header__titre {
-  color: #f7f7f7;
+  color: #838383;
   display: flex;
   align-items: center;
 }
@@ -562,7 +596,7 @@ COMPOSANTS
 }
 
 .icone__lien svg {
-  color: #a7adb5;
+  color: #6d6d6d;
 }
 
 .recherche {
@@ -576,14 +610,14 @@ COMPOSANTS
   border: none;
   outline: none;
   font-style: italic;
-  background-color: #5f6a75;
+  background-color: #0051a1;
   width: 100%;
   border-radius: 5px;
 }
 
 .recherche__bouton {
   padding: 0;
-  background-color: #5f6a75;
+  background-color: #0051a1;
   top: 0;
   right: 0;
   width: 23px;
@@ -598,7 +632,7 @@ COMPOSANTS
 }
 
 .recherche__bouton svg {
-  color: #cad1d4;
+  color: #0073a5;
   width: 100%;
   height: auto;
 }
@@ -625,7 +659,7 @@ COMPOSANTS
 }
 
 #burger svg {
-  color: #a7adb5;
+  color: #6d6d6d;
 }
 
 #chk-burger:checked ~ .menu-principal-container {
@@ -687,7 +721,7 @@ COMPOSANTS
 LAYOUT
 --------------------------------------------------------- */
 .site {
-  background-color: #e3e9ec;
+  background-color: #7e7e7e;
   font-family: arial;
   color: white;
   display: grid;
@@ -706,21 +740,21 @@ LAYOUT
 /* fin @media tablette */
 .site__header {
   grid-area: header;
-  background-color: #202931;
+  background-color: #001e38;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #151515;
+  background-color: #001e38;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #313530;
+  background-color: #040faf;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #404b57;
+  background-color: #001e38;
 }
 /*# sourceMappingURL=style.css.map */

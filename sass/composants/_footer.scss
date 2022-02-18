@@ -31,5 +31,10 @@
       svg {
           padding-right : 10px;
       }
+      &:hover{
+          svg{
+              color: $color__link__footer-hover;
+          }
+      }
     }  
 }    
