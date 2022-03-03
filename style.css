@@ -637,6 +637,16 @@ COMPOSANTS
   height: auto;
 }
 
+.util {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.util__lien {
+  display: flex;
+}
+
 #chk-burger {
   display: none;
 }
@@ -715,6 +725,20 @@ COMPOSANTS
 
 .menu-item a:hover {
   background-color: #aaa;
+}
+
+.recherche {
+  position: relative;
+  display: flex;
+}
+
+.recherche__bouton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------------------------------------------------------

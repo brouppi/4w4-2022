@@ -14,7 +14,12 @@
                     $posFinHeures = strrpos($titre, ')');
                     $nbHeures = substr($titre, $posDebutHeures, $posFinHeures - $posDebutHeures);
                 ?>
+                <?php echo get_the_post_thumbnail('thumbnail'); ?>
                 <h2 class="carte__titre"><?= $titreCourt; ?></h2>
+                
+                <a href="<?php echo get_permalink(); ?>">
+                    <?php $titreCourt; ?>
+                </a>
                 <p class="carte__code"><?= substr(get_the_title(), 0, 7) ?></p>
                 <p><?= $nbHeures; ?></p>
                 <p class="carte__description"><?= get_the_excerpt() ?></p>
